@@ -28,9 +28,7 @@ public class ImportDataController {
 			return "Unauthorized request";
 		}
 		
-		//final String filePath = "/Users/wechypedia/Documents/workspace-sts-3.7.3.RELEASE/zakool/src/main/resources/testdata.txt";
-		//final String filePath = "/Users/wechypedia/Documents/workspace-sts-3.7.3.RELEASE/zakool/src/main/resources/Data_5-20-2016.csv";
-		final String filePath = "/Users/wechypedia/Documents/workspace-sts-3.7.3.RELEASE/zakool/src/main/resources/zakoolmaster.csv";
+		final String filePath = "/resources/zakoolmaster.csv";
 
 		try{
 			//repository.deleteAll();
@@ -89,6 +87,7 @@ public class ImportDataController {
 			});*/
 			
 		}catch (IOException ex){
+			//TODO logger
 			ex.printStackTrace();
 			return "Fail";
 		}
